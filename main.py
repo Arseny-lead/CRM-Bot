@@ -2,11 +2,12 @@ from aiogram import Bot, Dispatcher
 
 from handlers.commands import router as commands_router
 from database import create_tables
+from config import BOT_TOKEN
 
 
 create_tables()
 
-BOT_TOKEN = "8338523679:AAHXepAqIA576owkhAJkKcu1HzPSmYdHhj4"
+BOT_TOKEN = BOT_TOKEN
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
